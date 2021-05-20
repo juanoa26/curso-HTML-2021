@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Es importante tener el idioma conforme el contenido de la pagona-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section conteniendo Article</title>
+</head>
+<!--
+    ETIQUETAS DE SECCION DE CONTENIDO PARTE 2:
+    -Setion:Es un contenedor generico que agrupa contenido que esta relacionado. Por ejemplo cuando 
+    creamos un bloque(sub-bloque) cuyo contenido es parte de otro bloque, usamos section.
+    
+    -Article: Es un contendor que representa contenido independiente, es decir, se puede leer el fragmento
+    en cualquier otro sitio y tendria sentido por si mismo.
+
+    -Aside: Se utiliza para representar contenido relacionado pero que no forma parte del contenido ppal.
+
+    NOTA: SECTION PUEDE CONTENER A ARTICLE Y ARTICLE A SECTION(veremos algunos ejemplos).
+    NOTA2: UN ARTICLE ES UN COMPONENTE DE LA PAGINA POR LO QUE PUEDE TENER SU PROPIA ETIQUETA
+    HEADER Y FOOTER.
+
+    https://validator.w3.org/ (validar nuestro HTML).
+-->
+
+<body>
+  <!-- Ejemplo de section conteniendo a article-->
+  <header>
+    <h1>NOTICIAS NACIONALES</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Section como contendor</h2>
+      <section>
+        <h3>Noticias del dia</h3>
+        <article>
+          <header>
+            <h4>Noticia 1</h4>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laboriosam delectus nesciunt magni ducimus veritatis quod, beatae
+            adipisci similique, exercitationem itaque, pariatur impedit!
+            Cumque veniam natus corrupti ad, eius unde minus.
+          </p>
+          <footer>La noticia ocurrio ayer 10 de abril a las 11am</footer>
+        </article>
+        <article>
+          <h4>Noticia 2</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laboriosam delectus nesciunt magni ducimus veritatis quod, beatae
+            adipisci similique, exercitationem itaque, pariatur impedit!
+            Cumque veniam natus corrupti ad, eius unde minus.
+          </p>
+        </article>
+        <article>
+          <h4>Noticia 3</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laboriosam delectus nesciunt magni ducimus veritatis quod, beatae
+            adipisci similique, exercitationem itaque, pariatur impedit!
+            Cumque veniam natus corrupti ad, eius unde minus.
+          </p>
+        </article>
+      </section>
+    </section>
+  </main>
+  <footer>11-04-2021</footer>
+</body>
+
+</html>

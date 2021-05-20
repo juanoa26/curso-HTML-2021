@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tablas</title>
+
+    <!--Esto es solo una demostraccion con css para que se pueda visualizar
+        el funcionamiento de la seccion de "Seleccionar columnas"
+      -->
+    <style>
+      col:nth-child(1) {
+        background-color: aqua;
+      }
+      col:nth-child(2) {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tablas</h1>
+    <table>
+      <caption>
+        HORARIO DE CLASES
+      </caption>
+      <colgroup>
+        <col span="5" />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th></th>
+          <th>L</th>
+          <th>M</th>
+          <th>X</th>
+          <th>J</th>
+          <th>V</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:30 - 9:30</td>
+          <td>Matematicas</td>
+          <td>Matematicas</td>
+          <td>Sociales</td>
+          <td>Matematicas</td>
+          <td>Matematicas</td>
+        </tr>
+        <tr>
+          <td>9:30 - 10:25</td>
+          <td>Lengua</td>
+          <td>Lengua</td>
+          <td>Matematicas</td>
+          <td>Ciencias</td>
+          <td>Lengua</td>
+        </tr>
+        <tr>
+          <td>10:25 - 11:20</td>
+          <td>Educacion Fisica</td>
+          <td>Ciencias</td>
+          <td>Lengua</td>
+          <td>Lengua</td>
+          <td>Educacion Fisica</td>
+        </tr>
+        <tr>
+          <td>11:30 - 11:45</td>
+          <td colspan="5">Recreo</td>
+        </tr>
+        <tr>
+          <td>11:45 - 12:40</td>
+          <td>Educacion Fisica</td>
+          <td>Matematicas</td>
+          <td>Matematicas</td>
+          <td>Lengua</td>
+          <td>Educacion Fisica</td>
+        </tr>
+        <tr>
+          <td>12:40 - 13:35</td>
+          <td>Educacion Fisica</td>
+          <td rowspan="2">Ciencias</td>
+          <td rowspan="2">Lengua</td>
+          <td>Educacion Fisica</td>
+          <td>Matematicas</td>
+        </tr>
+        <tr>
+          <td>13:35 - 14:30</td>
+          <td>Matematicas</td>
+          <td>Lengua</td>
+          <td>Ingles</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Total de asignaturas</td>
+          <td>12</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
